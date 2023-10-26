@@ -23,11 +23,6 @@
 hs_err_pid*
 replay_pid*
 
-### VS Code ###
-.vscode
-/.vscode
-
-
 ### STS ###
 .apt_generated
 .classpath
@@ -37,8 +32,3 @@ replay_pid*
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
