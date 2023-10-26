@@ -1,0 +1,8 @@
+-name hello
+
+-setcookie hello
+
+-smp enable
+
++K true
++A30
