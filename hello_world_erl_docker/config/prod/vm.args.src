@@ -1,0 +1,35 @@
+## -----------------------------------------------------------------------------
+## Distributed Erlang (disterl)
+## -----------------------------------------------------------------------------
+
+## Name of the node
+-name ${ERLANG_NODENAME}
+
+## Cookie for disterl
+-setcookie ${SERVICE_NAME}
+
+##-smp enable
+
+## -----------------------------------------------------------------------------
+## Erlang
+## -----------------------------------------------------------------------------
+
+## Increase distribution port buffer size.
+## +zdbbl 32768
+
+## Max processes
++P 2000000
+
+## Kernel polling
++K true
+
+## Async I/O threads
++A 64
+
+## Enable multi_time_warp
++c true
++C multi_time_warp
+
+## Heartbeat management; auto-restarts VM if it dies or becomes unresponsive
+## (Disabled by default..use with caution!)
+##-heart

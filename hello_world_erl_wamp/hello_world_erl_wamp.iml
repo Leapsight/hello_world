@@ -14,7 +14,7 @@
       <excludeFolder url="file://$MODULE_DIR$/.rebar3" />
       <excludeFolder url="file://$MODULE_DIR$/_build" />
     </content>
-    <orderEntry type="jdk" jdkName="Erlang 23.3.4.19" jdkType="Erlang SDK" />
+    <orderEntry type="jdk" jdkName="Erlang 23" jdkType="Erlang SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

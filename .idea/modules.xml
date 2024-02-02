@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/hello_world_erl_base/hello_world_erl_base.iml" filepath="$PROJECT_DIR$/hello_world_erl_base/hello_world_erl_base.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hello_world_erl_otp/hello_world_erl_otp.iml" filepath="$PROJECT_DIR$/hello_world_erl_otp/hello_world_erl_otp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hello_world_erl_wamp/hello_world_erl_wamp.iml" filepath="$PROJECT_DIR$/hello_world_erl_wamp/hello_world_erl_wamp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hello_world_erl_base/hello_world_erl_base.iml" 
+              filepath="$PROJECT_DIR$/hello_world_erl_base/hello_world_erl_base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hello_world_erl_otp/hello_world_erl_otp.iml" 
+              filepath="$PROJECT_DIR$/hello_world_erl_otp/hello_world_erl_otp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hello_world_erl_wamp/hello_world_erl_wamp.iml" 
+              filepath="$PROJECT_DIR$/hello_world_erl_wamp/hello_world_erl_wamp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hello_world_erl_docker/hello_world_erl_docker.iml" 
+              filepath="$PROJECT_DIR$/hello_world_erl_docker/hello_world_erl_docker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hello_world_erl_docker/apps/hello_world/app_hello_world_docker.iml" 
+              filepath="$PROJECT_DIR$/hello_world_erl_docker/apps/hello_world/app_hello_world_docker.iml" />
     </modules>
   </component>
 </project>
