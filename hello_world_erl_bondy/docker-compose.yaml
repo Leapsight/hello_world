@@ -1,0 +1,22 @@
+services:
+    bondy:
+        container_name: bondy
+        extends:
+            file: docker-compose.bondy.yaml
+            service: bondy-service
+        networks:
+            - default
+
+    hello:
+        container_name: hello
+        extends:
+            file: docker-compose.hello.yaml
+            service: hello-service
+        networks:
+            - default
+        depends_on:
+            - bondy
+networks:
+    default:
+        name: test-network
+

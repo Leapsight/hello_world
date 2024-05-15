@@ -1,0 +1,15 @@
++MMsco false
+-hidden true
+-start_epmd false
+-env ERL_DIST_PORT 27780
+-dist_listen true
++W w
++sbwtdio short
++sbwtdcpu short
++sbwt short
++Q 2097152
++P 2097152
++C multi_time_warp
++c true
++A 10
++MMscs 0

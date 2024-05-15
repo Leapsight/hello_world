@@ -13,3 +13,7 @@ _build
 *.dump
 .rebar
 *.crashdump
+node_modules
+/.idea
+*/*.iml
+

@@ -1,0 +1,25 @@
+services:
+
+    hello-service:
+        container_name: hello
+        hostname: hello
+        build:
+            context: .
+            dockerfile: Dockerfile
+
+        image: hello_world-image
+        environment:
+            BONDY_URL: ws://bondy:18080/ws
+            LOG_LEVEL: debug
+            WAMP_HOST: bondy
+            WAMP_PORT: 18082
+            WAMP_ENCODING: json
+            WAMP_REALM: "com.bondy.demo.hello"
+            WAMP_CALL_TIMEOUT: 10000
+            WAMP_RECONNECT_RETRIES: 10
+            WAMP_RECONNECT_MAX_RETRIES: 30
+            WAMP_RECONNECT_BACKOFF_MIN: 200
+            WAMP_RECONNECT_BACKOFF_MAX: 60000
+            WAMP_RECONNECT_BACKOFF_TYPE: jitter
+            SERVICE_NAME: hello
+            ERLANG_NODENAME: hello-0@hello

@@ -26,6 +26,83 @@
             {reconnect, true},
             {retries, infinity}
         ]}
+    ]},
+
+    {lager, [
+        %% Default handlers for lager/lager_event
+        {colored, true},
+        {async_threshold, 500},
+        {async_threshold_window, 50},
+        {error_logger_hwm, 50},
+        {handlers, [
+            {lager_console_backend, [
+                {level, ${LOG_LEVEL}},
+                {formatter, lager_default_formatter},
+                {formatter_config, [
+                    color,
+                    date, " ", time,
+                    " [", severity,"]",
+                    " [", pid, " ", module,":",function,":",line,"] ",
+                    message,
+                    "\e[0m\r\n"
+                ]}
+            ]}
+        ]},
+        {extra_sinks, [
+            {notifications_log_lager_event, [
+                {handlers, [
+                    {lager_console_backend, [
+                        {level, ${LOG_LEVEL}},
+                        {formatter, lager_default_formatter},
+                        {formatter_config, [
+                            color,
+                            date, " ", time,
+                            " [", severity,"]",
+                            " [", pid, " ", module,":",function,":",line,"] ",
+                            message,
+                            "\e[0m\r\n"
+                        ]}
+                    ]}
+                ]}
+            ]},
+            {error_logger_lager_event, [
+                {handlers, [
+                    {lager_console_backend, [
+                        {level, ${LOG_LEVEL}},
+                        {formatter, lager_default_formatter},
+                        {formatter_config, [
+                            color,
+                            date, " ", time,
+                            " [", severity,"]",
+                            " [", pid, " ", module,":",function,":",line,"] ",
+                            message,
+                            "\e[0m\r\n"
+                        ]}
+                    ]}
+                ]}
+            ]}
+        ]}
+    ]},
+
+    {kernel, [
+        {logger, [
+            {handler, default, logger_std_h,
+            #{
+                level => error,
+                formatter => {
+                    logger_formatter, #{
+                        template => [
+                            time,
+                            " [", level, "]",
+                            " [", pid, " ", moderlule,":", function,":", line, "] ",
+                            msg,
+                            "\r\n"
+                        ]
+                    }
+                }
+            }}
+        ]}
     ]}
+
 ].
 

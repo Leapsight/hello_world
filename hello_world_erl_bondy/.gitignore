@@ -1,0 +1,9 @@
+_build
+log
+logs
+.idea
+bondy/generated
+.vscode
+.tool-versions
+*.iml
+*.swp

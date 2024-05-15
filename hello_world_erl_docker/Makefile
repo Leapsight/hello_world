@@ -45,12 +45,8 @@ dockerrun:
 	docker run \
 		--network=host \
 		--rm \
-		-e CLUSTER_NAME="localhost" \
 		-e LOG_LEVEL=debug \
 		-e REPLICAS=1 \
-		-e RIAK_BUCKET_TYPE="resources_type" \
-		-e RIAK_HOST="localhost" \
-		-e RIAK_PORT=8087 \
 		-e WAMP_ENCODING=json \
 		-e WAMP_HOST="localhost" \
 		-e WAMP_PORT=18082 \
